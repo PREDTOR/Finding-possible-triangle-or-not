@@ -1,0 +1,15 @@
+#program to find whether the sides inputed forms a triangle
+# if yes then which type of triangle it is
+s1 = int(input("enter your 1st number:"))
+s2=  int(input("enter your 2nd number:"))
+s3 = int(input("enter your 3rd number:"))
+if s1+s2>s3 and s1+s3>s2 and s2+s3>s1:
+    print("Yes! Triangle is possble :D")
+    if(s1==s2==s3):
+        print("Tringle is Equilateral!")
+    elif(s1!=s2!=s3):
+        print("Triangle is Scalene!")
+    else:
+        print("Triangle is equilateral!")
+else:
+    print("It is not possile :( ")
